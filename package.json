@@ -1,0 +1,26 @@
+{
+  "name": "social-dev",
+  "version": "1.0.0",
+  "description": "connect developers across the world",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "sarthak pandey", 
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.19",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0"
+  }
+}
